@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+__author__ = 'Lemuel Li, Patrick Feany, and Jonathan Sohrabi'
+
+
 def main():
     t = int(input())
     for _ in range(t):
