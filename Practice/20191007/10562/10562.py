@@ -22,7 +22,10 @@ class Node:
         Returns:
             (str)  The string of interest
         '''
-        return '{0}({1})'.format(self.name, ''.join([child.gen_str() for child in self.children]))
+        return '{0}({1})'.format(
+            self.name,
+            ''.join([child.gen_str() for child in self.children])
+        )
 
 
 class Link:
@@ -48,7 +51,9 @@ def parse_letter_row(row):
     Returns:
         (List[Node])  List of nodes in such row
     '''
-    return [Node(row[i], i) for i in range(len(row)) if row[i] not in ' \t\n\r\f\v#']
+    return [Node(row[i], i)
+            for i in range(len(row))
+            if row[i] not in ' \t\n\r\f\v#']
 
 
 def get_links(span, link):
@@ -170,7 +175,7 @@ def main():
         tree = []
         i = input()
         while i.strip() != '#':
-            tree.append(i)
+            tree.append(i.rstrip())
             i = input()
         # Process input and print result
         result = undraw_the_trees(tree[::-1])   # Note inverted tree
