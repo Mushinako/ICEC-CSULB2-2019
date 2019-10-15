@@ -2,7 +2,7 @@
 
 Trung is bored with his mathematics homeworks. He takes a piece of chalk and starts writing a sequence of consecutive integers starting with 1 to **N** (1 < **N** < 10000). After that, he counts the number of times each digit (0 to 9) appears in the sequence. For example, with **N** = 13, the sequence is:
 
-```md
+```txt
 12345678910111213
 ```
 

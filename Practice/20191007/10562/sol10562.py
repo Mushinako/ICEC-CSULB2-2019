@@ -24,8 +24,7 @@ class Node:
         '''
         return '{0}({1})'.format(
             self.name,
-            ''.join([child.gen_str() for child in self.children])
-        )
+            ''.join([child.gen_str() for child in self.children]))
 
 
 class Link:
