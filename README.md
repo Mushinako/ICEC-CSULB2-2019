@@ -1,4 +1,4 @@
-# ICEC CSULB2 2019
+# ICPC CSULB2 2019
 
 Our team's collaborative solutions to some problems on UVa for ICPC SoCal competition practice
 * Python
